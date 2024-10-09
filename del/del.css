@@ -1,0 +1,279 @@
+ /* CSS PROPERTIES*/
+/*CSS properties are the individual rules that define the styles applied to HTML elements. They control
+ various aspects of how elements appear on a web page, such as layout, color, fonts, spacing, and responsiveness.*/
+ 
+/*css selectors*/
+/* 1 element (type) selectors Targets all elements of a given type (e.g., all p or h1 tags).
+ 2 class selector
+ 3 id selector
+ 4 universal selector
+ 5 descendant selector select elemets nested in other element
+ 6 pseudo selector Targets elements based on their state, like when they are hovered, focused, or selected.*/
+
+/*TEXT PROPERTIES*/
+/* These properties handle text alignment, spacing, decoration, and transformation.
+eg txt-align, txt-trasformer, txt-decoration
+*/
+
+/*FONT PROPERTIES*/
+/* These properties control the font style, size, and weight.
+EG font size, font weight, font style, font family 
+*/
+
+/*BOX MODEL*/
+/*The CSS Box Model is a fundamental concept that defines how elements on a web page are structured and how their sizes are calculated.
+Every HTML element is considered a rectangular box, and the box model consists of four key components: 
+1 content, 2 padding, 3  border, and 4 margin.*/
+
+
+/*PX VS EM,REM
+ px, em, and rem are units of measurement used to define sizes for elements like text, margins, padding, and more*/
+
+
+:root{
+     --orange-color:  rgb(255 86 52);
+     --white-color:  rgb(255, 255, 255);
+     --grey-color: #ebe9e9;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+}
+.for-header{
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    position: fixed;
+    z-index: 999;
+}
+.for-h{
+    margin-left: 10%;
+}
+.for-ul{
+  width: 25%;
+ margin-left: 17%;
+
+}
+.for-li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+}
+.for-butt{
+    width: 11%;
+    height:45% ;
+   background-color: var(--white-color);
+   border-radius: 10px;
+   border: 1px solid var(--grey-color);
+   font-weight: 500;
+   font-size: 15px;
+   margin-left: -4%;
+   cursor: pointer;
+}
+.for-butto{
+    width: 8%;
+    height:45% ;
+   border-radius: 10px;
+   border: none;
+   font-weight: 500;
+   font-size: 15px;
+   margin-left: -6%;
+   background-color: rgb(255 86 52);
+   color: var(--white-color);
+   cursor: pointer;
+}
+.list:hover{
+color: var(--orange-color);
+transition: 0.3s ease-in-out;
+cursor: pointer;
+}
+.for-butt:hover{
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    transition: 0.3s ease-in-out;
+}
+.first-section{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border-bottom: 1px solid #c1c1c1 ;
+}
+.im{
+    width: 681px;
+    height: 778px;
+    margin-right: 0;
+    
+}
+.for-pages{
+  margin: auto;
+  
+}
+.four{
+font-size: 350px;
+z-index: -1;
+color: rgba(255, 86, 52, 0.08) ;
+margin-top: -20%;
+}
+
+.for-p{
+  font-size: 60px; 
+  margin-top: -59%;
+  margin-left: 15%;
+}
+.for-lorem{
+    color: rgb(79, 78, 78);
+    margin-left: 15%;
+}
+.home{
+    width: 30%;
+    height: 70px;
+    background-color: var(--orange-color);
+    border-radius: 10px;
+    border: none;
+    color: var(--white-color);
+    font-size: 15px;
+    margin-left: 15%;
+    margin-top: 5%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.hh{
+    width: 80%;
+    margin-top: 6%;
+}
+.second-section{
+    width: 100%;
+    
+}
+.for-p-s-b{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.for-pp{
+  
+    color: rgb(79, 78, 78);
+    margin-top:  5%;
+}
+.nd{
+    width: auto;
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+   gap: 5%;
+}
+.android{
+ width: 230px; 
+ height: 70px;
+ border-radius: 15px;
+ background-color:var(--orange-color);
+ color:var(--white-color);
+ border: none;
+ font-size: 16px;
+ cursor: pointer;
+}
+.ios{
+    width: 230px; 
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    background-color:var(--orange-color);
+    color:var(--white-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+.for-ss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 6%;
+    
+}
+.for-me{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 15%;
+    color: rgb(79, 78, 78);
+}
+.uti{
+    margin-top: 15%;
+    color: rgb(79, 78, 78);
+}
+.for-bro{
+   color: var(--orange-color) ;
+   font-weight: 600;
+}
+.for-sa,.for-ny,.for-la,.for-se{
+   gap: 10px;
+ 
+    display: flex;
+   
+    align-items: center;
+}
+.for-ny,.for-se{
+    margin-top: 10%;
+    margin-left: -20%;
+}
+.vil{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6%;
+    justify-content: center;
+    align-items: center;
+    
+    column-gap: 30px;
+}
+.r{
+    border-radius: 30px;
+    
+}
+.foot{
+    margin-top: 6%;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #c1c1c1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cop{
+   font-size: 20px;
+   color:#555454
+}
+.brix{
+    color: var(--orange-color);
+}
+.web{
+    color:var(--orange-color)
+}
+@media(max-width:1248px){
+.for-ul{
+    display: none;
+}
+.for-butt{
+margin-left: 40%;
+}
+.first-section{
+    padding-top: 200px;
+}
+.im{
+    margin: 30px auto;
+     width: 100%;
+     height: 500px;
+     object-fit: cover;
+}
+}
